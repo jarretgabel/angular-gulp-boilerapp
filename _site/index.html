@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>
+      Angular-Gulp Boilerplate
+    </title>
+    <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' rel='stylesheet'>
+    <link href='assets/css/main.css' rel='stylesheet'>
+  </head>
+</html>
+<body ng-app='AngularGulpBoilerplate'>
+  <div class='container-fluid'>
+    <nav class='navbar navbar-default navbar-fixed-top'>
+      <div class='container-fluid'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>
+            Angular-Gulp Boilerplate
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main ng-controller='mainController' role='main'>
+      <div id='sidebar'>
+        <ul class='nav navbar-nav'>
+          <li ng-class="isCurrentPage('/welcome/')">
+            <a href='#/welcome/'>
+              <div class='vcenter glyphicon glyphicon-home'></div>
+              <div class='vcenter'>Welcome</div>
+            </a>
+          </li>
+          <li ng-class="isCurrentPage('/about/')">
+            <a href='#/about/'>
+              <div class='vcenter glyphicon glyphicon-edit'></div>
+              <div class='vcenter'>About</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id='main-content'>
+        <div class='ui-view-container'>
+          <div autoscroll='' class='view' ng-view></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src='assets/js/main.js'></script>
+</body>

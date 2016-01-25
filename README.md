@@ -1,13 +1,17 @@
 # Angular-Gulp boilerplate
-Lightweight & static, MVC-based AngularJS boilerplate to quickly launch web apps.
+Lightweight AngularJS boilerplate to scaffold static web apps.
 
 ### Technology Stack
 
 * Gulp
 * AngularJS
 * Sass
+* Autoprefixer
 * Haml
 * Bootstrap
+* Browser Sync
+* Browserify
+* SourceMaps
 
 ### Installation
 
@@ -18,3 +22,7 @@ Lightweight & static, MVC-based AngularJS boilerplate to quickly launch web apps
 3. Run local server: `gulp`
 
 4. Navigate to: `http://localhost:3001/`
+
+### Shout outs
+
+Shout out to [@robojack](https://github.com/robojack/) and his [jekyll boilerplate](https://github.com/robojack/jekyllplate).

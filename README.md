@@ -1,6 +1,8 @@
 # Angular-Gulp boilerplate
 Lightweight AngularJS boilerplate to scaffold static web apps.
 
+Demo available at [http://jarretgabel.com/angular-gulp-boilerplate/](http://jarretgabel.com/angular-gulp-boilerplate/)
+
 ### Technology Stack
 
 * Gulp
@@ -11,7 +13,6 @@ Lightweight AngularJS boilerplate to scaffold static web apps.
 * Bootstrap
 * Browser Sync
 * Browserify
-* SourceMaps
 
 ### Installation
 

@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robojack/*.git"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "browserify": "^13.0.0",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-ruby-haml": "0.0.7",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "lodash": "*",
+    "reactify": "^1.1.1",
+    "susy": "*",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "font-awesome": "^4.5.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0"
+  }
+}

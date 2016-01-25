@@ -1,0 +1,11 @@
+#sidebar
+  %ul.nav.navbar-nav
+    %li{ :"ng-class" => "isCurrentPage('/welcome/')" }
+      %a{ href: "#/welcome/" }
+        .vcenter.glyphicon.glyphicon-home
+        .vcenter Welcome
+
+    %li{ :"ng-class" => "isCurrentPage('/about/')" }
+      %a{ href: "#/about/" }
+        .vcenter.glyphicon.glyphicon-edit
+        .vcenter About

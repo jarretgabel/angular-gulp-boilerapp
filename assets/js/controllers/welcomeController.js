@@ -1,5 +1,5 @@
 angular.module('welcome-controller', [])
-  .controller('welcomeController', function($scope, $routeParams, $location, welcomeService) {
+  .controller('welcomeController', function($scope, $routeParams, welcomeService) {
     this.name = "welcome-controller";
     this.params = $routeParams;
 

@@ -11,8 +11,8 @@ require('./services/welcomeService');
 require('./filters/utils');
 
 angular.module('AngularGulpBoilerplate', [
-    'ngRoute', 
-    'ngAnimate', 
+    'ngRoute',
+    'ngAnimate',
     'main-controller',
     'welcome-controller',
     'about-controller',
@@ -24,17 +24,17 @@ angular.module('AngularGulpBoilerplate', [
   .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
       $routeProvider
-        .when('/welcome/', {
+        .when('/welcome', {
           templateUrl: 'welcome.html',
           controller: 'welcomeController',
           activetab: 'welcome'
         })
-        .when('/about/', {
+        .when('/about', {
           templateUrl: 'about.html',
           controller: 'aboutController',
           activetab: 'about'
         })
-        .otherwise({redirectTo:'/welcome'});
+        .otherwise({ redirectTo:'/welcome' });
 
-      $locationProvider.html5Mode(false);
+      $locationProvider.html5Mode({ enabled: true });
     }]);

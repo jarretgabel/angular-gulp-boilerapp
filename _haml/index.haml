@@ -6,15 +6,15 @@
 
 %body{ :"ng-app" => 'AngularGulpBoilerplate' }
   .container-fluid
-  
+
     = Haml::Engine.new(File.read(File.expand_path '_haml/includes/_main_nav.haml', File.dirname(__FILE__))).render
 
     %main{ role: 'main', :"ng-controller" => 'mainController' }
 
       = Haml::Engine.new(File.read(File.expand_path '_haml/includes/_sidebar.haml', File.dirname(__FILE__))).render
-      
+
       #main-content
         .ui-view-container
           .view{ :"ng-view" => true, autoscroll: "" }
-  
+
   = Haml::Engine.new(File.read(File.expand_path '_haml/includes/_scripts.haml', File.dirname(__FILE__))).render

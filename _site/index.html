@@ -8,6 +8,7 @@
     </title>
     <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' rel='stylesheet'>
     <link href='assets/css/main.css' rel='stylesheet'>
+    <base href='/angular-gulp-boilerplate/'>
   </head>
 </html>
 <body ng-app='AngularGulpBoilerplate'>
@@ -15,7 +16,7 @@
     <nav class='navbar navbar-default navbar-fixed-top'>
       <div class='container-fluid'>
         <div class='navbar-header'>
-          <a class='navbar-brand' href='' ng-href='#/welcome/'>
+          <a class='navbar-brand' href='' ng-href='welcome'>
             Angular-Gulp Boilerplate
           </a>
         </div>
@@ -24,14 +25,14 @@
     <main ng-controller='mainController' role='main'>
       <div id='sidebar'>
         <ul class='nav navbar-nav'>
-          <li ng-class="isCurrentPage('/welcome/')">
-            <a href='' ng-href='#/welcome/'>
+          <li ng-class="isCurrentPage('welcome')">
+            <a href='' ng-href='welcome'>
               <div class='vcenter glyphicon glyphicon-home'></div>
               <div class='vcenter'>Welcome</div>
             </a>
           </li>
-          <li ng-class="isCurrentPage('/about/')">
-            <a href='' ng-href='#/about/'>
+          <li ng-class="isCurrentPage('about')">
+            <a href='' ng-href='about'>
               <div class='vcenter glyphicon glyphicon-edit'></div>
               <div class='vcenter'>About</div>
             </a>

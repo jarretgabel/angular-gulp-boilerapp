@@ -12,8 +12,8 @@ require('./services/welcomeService');
 require('./filters/utils');
 
 angular.module('AngularGulpBoilerplate', [
-    'ngRoute', 
-    'ngAnimate', 
+    'ngRoute',
+    'ngAnimate',
     'main-controller',
     'welcome-controller',
     'about-controller',
@@ -25,23 +25,23 @@ angular.module('AngularGulpBoilerplate', [
   .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
       $routeProvider
-        .when('/welcome/', {
+        .when('/welcome', {
           templateUrl: 'welcome.html',
           controller: 'welcomeController',
           activetab: 'welcome'
         })
-        .when('/about/', {
+        .when('/about', {
           templateUrl: 'about.html',
           controller: 'aboutController',
           activetab: 'about'
         })
-        .otherwise({redirectTo:'/welcome'});
+        .otherwise({ redirectTo:'/welcome' });
 
-      $locationProvider.html5Mode(false);
+      $locationProvider.html5Mode({ enabled: true });
     }]);
 },{"./controllers/aboutController":2,"./controllers/mainController":3,"./controllers/welcomeController":4,"./filters/utils":5,"./services/aboutService":6,"./services/mainService":7,"./services/welcomeService":8,"angular":14,"angular-animate":10,"angular-route":12}],2:[function(require,module,exports){
 angular.module('about-controller', [])
-  .controller('aboutController', function($scope, $routeParams, $location, aboutService) {
+  .controller('aboutController', function($scope, $routeParams, aboutService) {
     this.name = "about-controller";
     this.params = $routeParams;
 
@@ -67,7 +67,7 @@ angular.module('main-controller', [])
 
 },{}],4:[function(require,module,exports){
 angular.module('welcome-controller', [])
-  .controller('welcomeController', function($scope, $routeParams, $location, welcomeService) {
+  .controller('welcomeController', function($scope, $routeParams, welcomeService) {
     this.name = "welcome-controller";
     this.params = $routeParams;
 

@@ -1,5 +1,5 @@
 angular.module('about-controller', [])
-  .controller('aboutController', function($scope, $routeParams, $location, aboutService) {
+  .controller('aboutController', function($scope, $routeParams, aboutService) {
     this.name = "about-controller";
     this.params = $routeParams;
 
